@@ -1,0 +1,41 @@
+
+====Node Backend====
+Rooms (UUID)
+    -Array of "Clients"
+    -Current Pot(s)
+    -Current Round #
+    -Timer
+    -ROOM SETTINGS (CONSTANTS)
+        -Small/Large Blind
+        -Bet Minimum/Maximum
+        -Static Dealer/Dynamic
+        -Buy Ins?
+        -Timed Turns?
+        -Max Time Limit?
+        -Roaming Dealer?
+ROUND PROCEDURE
+    Go through rounds until one person sitting down.
+    Dealer sends input to indicate progression through round stages.
+    Cards Dealt:
+        Create new pot, auto assign blinds.
+        Round of betting.
+    Flop:
+        Round of betting.
+    Turn:
+        Round of betting.
+    River:
+        Round of betting.
+BETTING
+    Each player, beginning with person left of big blind. Clockwise.
+    Running counter of the highest bet from that round.
+
+Client
+    -Name
+    -UUID
+    -Chip Count
+    -In Round
+    -In Table
+
+Pot
+    -Value
+    -Contributing players
