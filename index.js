@@ -18,7 +18,7 @@ app.configure(function() {
 });
 
 //Import the ChipTrack game code.
-var ct = require('./chiptrack');
+var ct = require('./chiptrack_server');
 
 //Create an http server with the HTTP module.
 var server = require('http').createServer(app).listen(8080);
