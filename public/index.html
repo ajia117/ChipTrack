@@ -3,36 +3,56 @@
 
     <head>
         <meta charset="utf-8"/>
+        <!-- For mobile responsive behaviors -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Using a CSS reset like normalize.css is usually a good idea -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" type="text/css">
+        <!-- This is what loads the CSS we have written -->
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>ChipTrack</title>
     </head>
 
     <body>
 
-        <div id="gameArea">
-            <!-- MAIN CONTENT AREA WHERE TEMPLATES WILL BE LOADED -->
-        </div>
-
+        <!--
         <script id="splash" type="text/template">
         </script>
+        --!>
 
-        <script id="main-menu-template" type="text/template">
+        <div id="main-menu-screen" type="text/template">
             <!-- Put Buttons and Stuff Here! -->
-            <div class=
-        </script>
+            <div class="main-menu-button" id='btn_createGame'>Create Game</div>
+            <div class="main-menu-button" id='btn_joinGame'>Join Game</div>
+            <div class="main-menu-button" id='btn_about'>About</div>
+        </div>
 
         <!-- Dialog when user clicks "Create Game" at the Main Menu -->
-        <script id="create-game-template" type="text/template">
-        
-        </script>
+        <div id="create-game-screen" type="text/template">
+            <form id='gameArgs'>
+
+            </form>
+            <div class="submit-button">Create Game</div>
+        </div>
 
         <!-- Dialog when user clicks "Join Game" at the Main Menu -->
-        <script id="join-game-template" type="text/template">
+        <div id="join-game-screen" type="text/template">
+            <div class="submit-button">Join Game</div>
+        </div>
 
-        </script>
+        <!-- Dialog when user clicks "About" at the Main Menu -->
+        <div id="about-template" type="text/template">
+            <div class="main-menu-button" id='btm_mainMenu'>Main Menu</div>
+        </div>
 
-        <!-- Main game screen, shows poker chips. -->
-        <script id="game" type="text/template">
+        <!-- Table game screen, shows poker chips. -->
+        <div id="table-overview-screen" type="text/template">
 
-        </script>
+        </div>
+
+        <!-- Individual game screen, shows poker chips. -->
+        <div id="individual-overview-screen" type="text/template">
+
+        </div>
 
     </body>
 
